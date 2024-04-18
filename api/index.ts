@@ -7,13 +7,13 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
-      "https://task-manager-demo-frontend.vercel.app",
+      "http://localhost:3001",
+      "https://available-shifts-frontend.vercel.app",
       "*"
     ],
   })
 );
-const port = 4000;
+const port = 3001;
 require("dotenv").config();
 
 app.use(express.json());
